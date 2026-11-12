@@ -62,7 +62,7 @@ const ResultGrid = () => {
         getData()
     }, [query, activeTab,dispatch])
 
-    if (error) return <h1>Error</h1>
+    if (error) return <p role='alert' className='px-10 text-red-400'>{error}</p>
     if (loading) return <h1>Loading...</h1>
 
     return (

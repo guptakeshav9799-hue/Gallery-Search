@@ -33,3 +33,15 @@ React.js · Redux Toolkit · Tailwind CSS · REST APIs · JavaScript
    ```bash
    npm run dev
    ```
+
+## API Keys
+
+Create a `.env` file in the project root and add API keys for the services you want to use:
+
+```
+VITE_UNSPLASH_KEY=your_unsplash_access_key
+VITE_PEXELS_KEY=your_pexels_api_key
+VITE_TENOR_KEY=your_tenor_api_key
+```
+
+For Vercel deployments, add these variables under **Project Settings > Environment Variables**, then redeploy. Vite embeds `VITE_` variables into the client bundle at build time, so adding them requires a new deployment.
